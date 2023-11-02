@@ -1,5 +1,9 @@
 <div align="center">
 
+JUST RUN pdf.py EDIT pdf to suit your needs
+
+
+
 <img src="./images/word-search-logo.jpg" width="50%" alt="Word Search Generator Logo" />
 
 # Word Search Generator
