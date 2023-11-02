@@ -1,19 +1,20 @@
-22 20
+18 15
 hu
-vulkánmanó
-fenyőfa
-tarisznya
-tanoda
-csatangolás
-zöld hegy
-vulkánkitörés
-kanári
-kék pinty
-lávamező
-barlangrendszer
-vulkanit
-galottia
-madárfészek
-üveg
-sztalaktit
-fügekaktusz
+HÓPIHE
+SIRÁLY
+FARKAS
+MACKÓ
+SZELLŐ
+VIHAR
+FELHŐ
+KALAND
+SZIKLA
+ÜREG
+ANGYAL
+TÉL
+NAGYVILÁG
+FORRÓSÁG
+NYÁR
+VADON
+UTAZÁS
+BUNDA
