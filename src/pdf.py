@@ -105,6 +105,7 @@ if __name__ == '__main__':
         flowables.append(p)
         p = Paragraph("Ismerd meg a könyvecskék mesekönyveket!",syleh)
         flowables.append(p)        
+        p = Paragraph("",syleh)      
         flowables.append(p)
         p = Paragraph("<u>konyvecskek.hu</u>",syleh)
         flowables.append(p)
@@ -118,7 +119,11 @@ if __name__ == '__main__':
         #flowables.append(PageBreak())
     
     
+    doc.build(flowables)
     
+    doc = SimpleDocTemplate("simple_table_solution.pdf", pagesize=A4,topMargin=1.0,bottomMargin=1.0,leftMargin=1.0,rightMargin=1.0)
+    flowables = []
+
     x = [skl[i:i + 5] for i in range(0, len(skl), 5)] 
 
     tbl = Table(x)

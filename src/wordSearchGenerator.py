@@ -28,6 +28,8 @@ import numpy
 
 class WordSearch:
    
+    # direction_options = [(-1,0), (1,0),(-1,1),(-1,-1),(1,1),(1,-1),(0,-1),(0,1)]
+    direction_options = [ (1,0),(0,1)]
 
     def run_generator_from_stdin(self, use_key=False, use_csv=False, folder=None, language=None):
         """Gets data from stdin and then creates a word search"""
@@ -175,7 +177,7 @@ class WordSearch:
         """finds a position and directions ((x,y),(dx,dy)) for a new word"""
         options = []
         w = []
-        for direction in [(-1,0), (1,0),(-1,1),(-1,-1),(1,1),(1,-1),(0,-1),(0,1)]:
+        for direction in WordSearch.direction_options:
             for x in range(0, dimensions[0]):
                 for y in range(0, dimensions[1]):
                     start_point = (x,y)
@@ -236,7 +238,7 @@ class WordSearch:
     @staticmethod
     def _choose_direction() -> tuple:
         """Pick a direction for the word"""
-        return random.choice([(-1,0), (1,0),(-1,1),(-1,-1),(1,1),(1,-1),(0,-1),(0,1)])
+        return random.choice( WordSearch.direction_options)
 
     @staticmethod
     def _get_end_point(word: str, direction: tuple, start_point: tuple) -> tuple:

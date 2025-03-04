@@ -272,3 +272,7 @@ Here's a list of feature that could be implemented.
 - Convert codebase to Rust and target WASM
 - Convert codebase to JavaScript and run just in browser
 - Add test suite
+
+### PDF option
+
+ python ./src/pdf.py
